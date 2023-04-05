@@ -28,3 +28,4 @@ export function delay(time, message) {
         }, time);
     });
 }
+
