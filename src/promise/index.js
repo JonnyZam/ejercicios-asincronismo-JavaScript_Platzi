@@ -19,3 +19,12 @@ countCows.then((result) => {
     console.log(error);
 }).finally(() => console.log('Finally'));
 
+// Ejemplo Platzi                                   // Envía mensaje despues de sierto tiempo enviado como argumento time.
+
+export function delay(time, message) {
+    return new Promise((resolve, reject) => {
+        window.setTimeout(() => {
+            resolve(message);
+        }, time);
+    });
+}
